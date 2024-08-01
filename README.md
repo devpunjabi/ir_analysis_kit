@@ -1,5 +1,7 @@
 # Infrared Spectrum analysis
 
+Publication link : 
+
 Automated Infrared spectrum analysis to identify 17 functional groups using deep learning. 
 At present our model can identify below mentioned groups. 
 Our model can be extended to incorporate identification of other functional groups as well.
@@ -22,7 +24,12 @@ Our model can be extended to incorporate identification of other functional grou
     - amides
     - nitro
 
-Our model accepts jcamp file for molecules as input.
+Our model accepts jcamp file for molecules as input. Our models were trained on NIST SRD 35 and Chemotion datasets.
+
+We cannot provide NIST SRD 35 dataset as it is a commericial dataset. 
+
+We provide our open access Chemotion dataset which can be downloaded via Radar4Chem : 
+https://radar4chem.radar-service.eu/radar/en/dataset/OGoEQGlsZGElrgst
 
 
 ## Table of Contents
@@ -99,4 +106,4 @@ Dev Punjabi - dev.punjabi@kit.edu,
 
 Nicole Jung - nicole.jung@kit.edu
 
-Project Link: https://github.com/devpunjabi/ir_analysis_kit/
+Institution : https://www.ibcs.kit.edu/
