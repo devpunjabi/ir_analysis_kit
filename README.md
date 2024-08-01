@@ -37,20 +37,21 @@ Our model accepts jcamp file for molecules as input.
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/project-name.git
+    git clone https://github.com/devpunjabi/ir_analysis_kit.git
     ```
 
 2. Change to the project directory:
 
     ```sh
-    cd project-name
+    cd ir_analysis_kit
     ```
 
-3. Create and activate a virtual environment:
+3. Create and activate an anaconda virtual environment:
 
     ```sh
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    conda create --name ir python=3.8
+    conda activate ir
+
     ```
 
 4. Install the required dependencies:
@@ -77,9 +78,13 @@ print(result)
 Contributions are welcome! Please follow these steps to contribute:
 
     -Fork the repository.
+
     -Create a new branch: git checkout -b feature-branch-name.
-    -Make your changes and commit them: git commit -m 'Add some feature'.
+
+    -Make your changes and commit them: git commit -m 'New feature'.
+
     -Push to the branch: git push origin feature-branch-name.
+
     -Open a pull request.
 
 
@@ -91,6 +96,7 @@ This project is licensed under the MIT License
 ## Contact
 
 Dev Punjabi - dev.punjabi@kit.edu,
+
 Nicole Jung - nicole.jung@kit.edu
 
 Project Link: https://github.com/devpunjabi/ir_analysis_kit/
