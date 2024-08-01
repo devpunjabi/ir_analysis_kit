@@ -76,11 +76,11 @@ print(result)
 
 Contributions are welcome! Please follow these steps to contribute:
 
-    Fork the repository.
-    Create a new branch: git checkout -b feature-branch-name.
-    Make your changes and commit them: git commit -m 'Add some feature'.
-    Push to the branch: git push origin feature-branch-name.
-    Open a pull request.
+    -Fork the repository.
+    -Create a new branch: git checkout -b feature-branch-name.
+    -Make your changes and commit them: git commit -m 'Add some feature'.
+    -Push to the branch: git push origin feature-branch-name.
+    -Open a pull request.
 
 
 ## License
@@ -90,7 +90,7 @@ This project is licensed under the MIT License
 
 ## Contact
 
-Dev Punjabi - dev.punjabi@kit.edu
+Dev Punjabi - dev.punjabi@kit.edu,
 Nicole Jung - nicole.jung@kit.edu
 
 Project Link: https://github.com/devpunjabi/ir_analysis_kit/
