@@ -69,16 +69,27 @@ https://radar4chem.radar-service.eu/radar/en/dataset/OGoEQGlsZGElrgst
 
 ## Usage
 
-Provide examples and explanations for how to use the project. You can include code snippets and command-line examples.
-
-```python
-from project_module import some_function
-
-# Example usage
-result = some_function(argument)
-print(result)
-
+1. Navigate to data folder. 
 ```
+    cd ir_analysis/data
+```
+2. Follow the instructions in data_preproc.ipynb to create preprocessed datasets.
+
+3. Export dataset file as environment variable 
+```
+    export DF=~/data/preprocessed_dataset.pk
+```
+4. Navigate to utils folder 
+```
+    cd ir_analysis/utils
+```
+5. Update config.json with desired parameters. Default parameters in the file belong to our best model. 
+
+6. Run K-fold cross validation with 
+```
+    python cv.py
+```
+7. Trained models are saved under models with experiment names mentioned in config.json
 
 ## Contributing
 

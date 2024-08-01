@@ -7,6 +7,7 @@ import numpy as np
 
 from torch.utils.data import DataLoader
 import torch
+import json
 
 from models import model_init, train, test
 from parser import IrDataset, get_dataset
@@ -19,35 +20,21 @@ export DF=/path/to/input/file
 
 '''
 
-## Experiment name
-exp_name = 'nist_1200'
+with open('config.json', 'r') as config_file:
+    config = json.load(config_file)
 
-## Wave number to split spectrum
-split_at = 1200
+# Assign configuration variables
 
-## Total epochs to train network
-total_epochs = 50
-
-## Learning rate
-lr = 0.01
-
-## Gamma
-gamma = 0.1
-
-## Shuffle seed
-seed = 319
-
-## Batch Size
-batch_size = 32
-
-## Number of classes
-num_classes = 17
-
-## Logging after 
-log_interval = 2
-
-## Number of splits for KFOLD cross validation
-splits = 5
+exp_name = config['exp_name']
+split_at = config['split_at']
+total_epochs = config['total_epochs']
+lr = config['lr']
+gamma = config['gamma']
+seed = config['seed']
+batch_size = config['batch_size']
+num_classes = config['num_classes']
+log_interval = config['log_interval']
+splits = config['splits']
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
